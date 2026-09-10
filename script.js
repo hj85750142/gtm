@@ -1,17 +1,14 @@
-const dialog = document.querySelector(".hotline-dialog");
-const openButtons = document.querySelectorAll(".open-hotline");
-const closeButtons = dialog.querySelectorAll(".dialog-close, .dialog-confirm");
+const testButton = document.querySelector("#gtm-test-button");
+const testStatus = document.querySelector("#test-status");
 
-openButtons.forEach((button) => {
-  button.addEventListener("click", () => dialog.showModal());
-});
+window.dataLayer = window.dataLayer || [];
 
-closeButtons.forEach((button) => {
-  button.addEventListener("click", () => dialog.close());
-});
+testButton.addEventListener("click", () => {
+  window.dataLayer.push({
+    event: "gtm_test_button_click",
+    button_id: testButton.id,
+    button_text: testButton.textContent.trim(),
+  });
 
-dialog.addEventListener("click", (event) => {
-  if (event.target === dialog) {
-    dialog.close();
-  }
+  testStatus.textContent = `已点击（${new Date().toLocaleTimeString()}）`;
 });
