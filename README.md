@@ -2,6 +2,8 @@
 
 用于验证 Google Tag Manager 点击触发器的最小测试页面。
 
+已安装 GTM 容器：`GTM-PDDN6SBC`。
+
 页面只有一个按钮：
 
 - 元素 ID：`gtm-test-button`
