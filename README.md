@@ -2,7 +2,7 @@
 
 用于验证 Google Tag Manager 点击触发器的最小测试页面。
 
-已安装 GTM 容器：`GTM-PDDN6SBC`。
+已安装 GTM 容器：`GTM-KLSP65HZ`。
 
 页面只有一个按钮：
 
